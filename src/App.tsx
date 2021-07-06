@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -10,11 +9,26 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
-          <Route path="/tools" exact component={Tools} />
+          <Route path="/" exact component={Home}>
+            <Navbar AppBarColor="transparent" />
+            <Home />
+          </Route>
+
+          <Route path="/about" exact component={About}>
+            <Navbar AppBarColor="#202123" />
+            <About />
+          </Route>
+
+          <Route path="/tools" exact component={Tools}>
+            <Navbar AppBarColor="#202123" />
+            <Tools />
+          </Route>
+
+          <Route path="/pets" exact component={Tools}>
+            <Navbar AppBarColor="#202123" />
+            <Tools />
+          </Route>
         </Switch>
       </Router>
     </>

@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import colors from "./colors";
 import { Link } from "react-router-dom";
+import AppBar from "@material-ui/core/AppBar";
+
+export const StyledAppBar = styled(AppBar)`
+  backdrop-filter: blur(4px);
+  height: 80px;
+`;
 
 export const StyledLink = styled(Link)`
   color: ${colors.white};
@@ -8,6 +14,7 @@ export const StyledLink = styled(Link)`
   justify-content: flex-end;
   align-items: center;
   text-decoration: none;
+  padding-right: 10px;
   margin: 0.5rem 1rem;
   height: 100%;
   cursor: pointer;
@@ -17,18 +24,17 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+export const ToolBar = styled.div`
+  background-color: transparent;
+  height: 80px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+`;
+
 // export const Text = styled(Typography)`
 //   color: white;
 //   color: ${(props) => props.color};
 //   font-size: ${(props) => props.size};
 //   text-decoration: ${(props) => (props.deleted ? "line-through" : "unset")};
-// `;
-
-// export const StyledLink = styled.div`
-//   color: white;
-//   height: 100%;
-//   background-image: ${(props) => props.src};
-//   background-position: center center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
 // `;
