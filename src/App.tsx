@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Tools from "./pages/Tools";
 
-function App() {
+const App = () => {
   return (
     <>
       <Router>
@@ -19,6 +19,6 @@ function App() {
       </Router>
     </>
   );
-}
+};
 
 export default App;

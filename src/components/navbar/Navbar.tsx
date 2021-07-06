@@ -1,38 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Navbar.css";
-import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import { StyledLink } from "../style/navBarStyles";
+import { StyledLink } from "../../style/navBarStyles";
 import { Close, MoreVert } from "@material-ui/icons";
+import { Typography } from "@material-ui/core";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  function ElevationScroll(props: any) {
-    const { children } = props;
-
-    const trigger = useScrollTrigger({
-      disableHysteresis: true,
-      threshold: 0,
-    });
-
-    return React.cloneElement(children, {
-      elevation: trigger ? 10 : 0,
-    });
-  }
-
-  ElevationScroll.propTypes = {
-    children: PropTypes.element.isRequired,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-  };
 
   return (
     <AppBar
@@ -50,9 +27,11 @@ const Navbar = () => {
           justifyContent: "space-between",
         }}
       >
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          AT
-        </Link>
+        <StyledLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Typography variant="h3" component="h1">
+            AT
+          </Typography>
+        </StyledLink>
 
         <div className={click ? "nav-menu active" : "nav-menu"}>
           <StyledLink
@@ -83,11 +62,7 @@ const Navbar = () => {
           </StyledLink>
         </div>
         <div className="menu-icon" onClick={handleClick}>
-          {click ? (
-            <Close className="fa-times" />
-          ) : (
-            <MoreVert className="fa-bars" />
-          )}
+          {click ? <Close fontSize="large" /> : <MoreVert fontSize="large" />}
         </div>
       </div>
     </AppBar>
