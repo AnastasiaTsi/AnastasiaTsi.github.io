@@ -4,7 +4,7 @@ import "./Navbar.css";
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
-import { StyledLink } from "../style/headerStyles";
+import { StyledLink } from "../style/navBarStyles";
 import { Close, MoreVert } from "@material-ui/icons";
 
 const Navbar = () => {

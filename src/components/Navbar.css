@@ -28,7 +28,6 @@
       rgba(14, 18, 18, 0.9) 70%,
       rgba(14, 18, 18, 1) 100%
     );
-
     right: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -36,7 +35,6 @@
   }
 
   .menu-icon {
-    /* background-color: royalblue; */
     display: block;
     position: absolute;
     top: 0;
