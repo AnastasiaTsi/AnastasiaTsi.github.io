@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Tools from "./pages/Tools";
+import Pets from "./pages/Pets";
 
 const App = () => {
   return (
@@ -25,9 +26,9 @@ const App = () => {
             <Tools />
           </Route>
 
-          <Route path="/pets" exact component={Tools}>
+          <Route path="/pets" exact component={Pets}>
             <Navbar AppBarColor="#202123" />
-            <Tools />
+            <Pets />
           </Route>
         </Switch>
       </Router>
