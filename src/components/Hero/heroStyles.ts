@@ -13,8 +13,15 @@ export const RootDiv = styled.div`
   background-attachment: fixed;
 `;
 
+export const StyledIs = styled.div`
+  font-family: courier;
+  font-weight: 600;
+  color: white;
+`;
+
 export const CardDiv = styled.div`
   margin: auto;
+  margin-top: 200px;
   inset: 0;
   padding: 2%;
   width: 50%;
