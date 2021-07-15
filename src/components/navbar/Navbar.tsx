@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-import { StyledAppBar, StyledLink, ToolBar } from "../../style/navBarStyles";
+import { StyledAppBar, StyledLink, ToolBar } from "./navBarStyles";
 import { Close, MoreVert } from "@material-ui/icons";
 import { Typography } from "@material-ui/core";
 
@@ -36,14 +36,14 @@ const Navbar = ({ AppBarColor }: NavBarProps) => {
             .is()
           </StyledLink>
 
-          <StyledLink
+          {/* <StyledLink
             to="/about"
             className="nav-links"
             style={{ fontSize: "1.2rem" }}
             onClick={closeMobileMenu}
           >
             .about()
-          </StyledLink>
+          </StyledLink> */}
 
           <StyledLink
             to="/tools"

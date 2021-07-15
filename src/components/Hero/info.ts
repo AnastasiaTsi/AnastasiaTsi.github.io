@@ -6,15 +6,15 @@ const info = [
     paragraph2: "Bachelor Degree",
   },
   {
-    title: "work",
+    title: "employment",
     paragraph1: `Web developer using the MERN stack.`,
     paragraph2: "December 2020 - Present",
   },
-  {
-    title: "hobbies",
-    paragraph1: `Web developer`,
-    paragraph2: "Full time",
-  },
+  // {
+  //   title: "hobbies",
+  //   paragraph1: `Web developer`,
+  //   paragraph2: "Full time",
+  // },
 ];
 
 export default info;

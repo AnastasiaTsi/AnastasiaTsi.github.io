@@ -37,7 +37,8 @@ const MainCard = () => {
         variant="body1"
         gutterBottom
       >
-        Just someone who keeps on exploring <br />
+        a software developer from Greece <br /> <br />
+        and someone who keeps on exploring <br />
         new technologies in a continues <br /> attempt to make some cool web
         apps...
       </Typography>

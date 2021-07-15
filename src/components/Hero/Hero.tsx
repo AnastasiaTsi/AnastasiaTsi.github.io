@@ -10,18 +10,17 @@ const Hero = () => {
       <div style={{ marginTop: "80px" }} />
 
       <MainCard />
-      <MyCard
-        title={info[0].title}
-        paragraph1={info[0].paragraph1}
-        paragraph2={info[0].paragraph2}
-      />
-      <MyCard
-        title={info[1].title}
-        paragraph1={info[1].paragraph1}
-        paragraph2={info[1].paragraph2}
-      />
+
+      {info.map((info, index) => (
+        <MyCard
+          key={index}
+          title={info.title}
+          paragraph1={info.paragraph1}
+          paragraph2={info.paragraph2}
+        />
+      ))}
+
       <CommentCard />
-      {/* <MyCard title={info[2].title} /> */}
       <div style={{ marginTop: "200px" }} />
     </RootDiv>
   );

@@ -26,12 +26,10 @@ const MyCard = ({ title, paragraph1, paragraph2 }: CardProps) => {
         </StyledIs>
       </Typography>
       <Typography style={{ color: "#555" }} variant="h6" gutterBottom>
-        {paragraph1 ||
-          "subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur"}
+        {paragraph1}
       </Typography>
       <Typography variant="body1" gutterBottom>
-        {paragraph2 ||
-          "subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur"}
+        {paragraph2}
       </Typography>
     </CardDiv>
   );
