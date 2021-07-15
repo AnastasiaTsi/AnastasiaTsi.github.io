@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-import { StyledAppBar, StyledLink, ToolBar } from "../../style/navBarStyles";
+import { StyledAppBar, StyledLink, ToolBar } from "./navBarStyles";
 import { Close, MoreVert } from "@material-ui/icons";
 import { Typography } from "@material-ui/core";
 

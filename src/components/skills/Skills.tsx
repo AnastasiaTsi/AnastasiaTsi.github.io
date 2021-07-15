@@ -1,42 +1,23 @@
-import React from "react";
+import { RootDiv } from "./skillsStyles";
+import { Heading1 } from "./skillsStyles";
+import Card from "./Card";
 
 const Skills = () => {
   return (
-    <div
-      style={{
-        color: "white",
-        backgroundImage: "url(images/sand.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-      }}
-    >
-      <h1 style={{ margin: 0 }}>skills</h1>
-      <p>TECHNICAL</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p>react</p>
-      <p>node</p>
-      <p>git</p>
-      <p style={{ margin: 0 }}>NON-TECHNICAL</p>
-    </div>
+    <RootDiv>
+      <Heading1 variant="h2">Skills</Heading1>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <Card title={"Technical"} />
+        <Card title={"Soft"} />
+      </div>
+      <div style={{ paddingBottom: "60px" }}></div>
+    </RootDiv>
   );
 };
 
