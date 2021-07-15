@@ -21,18 +21,17 @@ const MyCard = ({ title, paragraph1, paragraph2 }: CardProps) => {
             }}
           >
             {title}
-            {/* work - react(web dev at its worst), hobbies */}
           </span>
           )
         </StyledIs>
       </Typography>
       <Typography style={{ color: "#555" }} variant="h6" gutterBottom>
-        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quos blanditiis tenetur
+        {paragraph1 ||
+          "subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur"}
       </Typography>
       <Typography variant="body1" gutterBottom>
-        subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Quos blanditiis tenetur
+        {paragraph2 ||
+          "subtitle1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur"}
       </Typography>
     </CardDiv>
   );

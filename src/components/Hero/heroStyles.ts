@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import colors from "../../style/colors";
-import { Link } from "react-router-dom";
-import AppBar from "@material-ui/core/AppBar";
 
 export const RootDiv = styled.div`
   min-height: 100vh;
