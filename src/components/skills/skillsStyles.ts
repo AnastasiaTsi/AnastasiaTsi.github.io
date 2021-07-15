@@ -26,5 +26,5 @@ export const CardDiv = styled.div`
   border-radius: 25px;
   height: fit-content;
   margin: auto;
-  width: 20%;
+  width: 200px;
 `;

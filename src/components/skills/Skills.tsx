@@ -1,6 +1,7 @@
-import { RootDiv } from "./skillsStyles";
-import { Heading1 } from "./skillsStyles";
+import { RootDiv, Heading1 } from "./skillsStyles";
+import { Button } from "@material-ui/core";
 import Card from "./Card";
+import skills from "./skillsList";
 
 const Skills = () => {
   return (
@@ -13,9 +14,12 @@ const Skills = () => {
           justifyContent: "space-evenly",
         }}
       >
-        <Card title={"Technical"} />
-        <Card title={"Soft"} />
+        {skills.map((skill, index) => (
+          <Card key={index} title={skill.title} skills={skill.array} />
+        ))}
       </div>
+
+      {/* <Button style={{ color: "white" }}>cv</Button> */}
       <div style={{ paddingBottom: "60px" }}></div>
     </RootDiv>
   );
