@@ -6,7 +6,7 @@ const info = [
     paragraph2: "Bachelor Degree",
   },
   {
-    title: "work",
+    title: "employment",
     paragraph1: `Web developer using the MERN stack.`,
     paragraph2: "December 2020 - Present",
   },
