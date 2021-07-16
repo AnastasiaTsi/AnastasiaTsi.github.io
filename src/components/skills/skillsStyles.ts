@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Typography } from "@material-ui/core/";
 
-export const Heading1 = styled(Typography)`
+export const Heading = styled(Typography)`
   text-align: center;
   font-family: courier;
   font-weight: bold;

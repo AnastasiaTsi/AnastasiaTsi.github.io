@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { StyledAppBar, StyledLink, ToolBar } from "./navBarStyles";
 import { Close, MoreVert } from "@material-ui/icons";
 import { Typography } from "@material-ui/core";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 type NavBarProps = {
   AppBarColor: string;
@@ -55,12 +56,24 @@ const Navbar = ({ AppBarColor }: NavBarProps) => {
           </StyledLink>
 
           <StyledLink
-            to="/tools"
+            to="/pets"
             className="nav-links"
             style={{ fontSize: "1.2rem" }}
             onClick={closeMobileMenu}
           >
             .pets()
+          </StyledLink>
+          <StyledLink
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/anastasia-tsilepi/",
+                "_blank"
+              )
+            }
+            className="nav-links"
+            style={{ fontSize: "1.2rem" }}
+          >
+            <LinkedInIcon style={{ marginBottom: "-6px" }} />
           </StyledLink>
         </div>
         <div className="menu-icon" onClick={handleClick}>

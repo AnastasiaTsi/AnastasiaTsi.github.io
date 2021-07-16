@@ -6,6 +6,7 @@ export const Heading1 = styled(Typography)`
   color: ${colors.white};
   font-family: courier;
   font-weight: bold;
+  font-size: 305px;
 `;
 
 //style={{ color: "#fff", fontFamily: "courier", fontWeight: "bold" }}

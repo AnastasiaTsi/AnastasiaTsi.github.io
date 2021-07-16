@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import colors from "../../style/colors";
+import size from "../../style/size";
 
 export const RootDiv = styled.div`
   min-height: 100vh;
@@ -26,4 +27,7 @@ export const CardDiv = styled.div`
   height: fit-content;
   color: grey;
   border-left: solid ${colors.purple};
+  @media (max-width: ${size.mobileL}) {
+    margin-left: 35px;
+  }
 `;
