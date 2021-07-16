@@ -1,8 +1,9 @@
 import MainCard from "./MainCard";
 import MyCard from "./MyCard";
-import { RootDiv } from "./heroStyles";
+
 import info from "./info";
 import CommentCard from "./CommentCard";
+import { RootDiv } from "../../style/genericStyles";
 
 const Hero = () => {
   return (

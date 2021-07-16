@@ -1,22 +1,14 @@
-import React from "react";
+import { RootDiv } from "../style/genericStyles";
 
 const Pets = () => {
   return (
     <>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
-      <h1>Pets</h1>
+      <RootDiv>
+        <div style={{ backgroundColor: "#212529" }}>
+          <div style={{ marginTop: "80px" }} />
+          <h1>Why not ?</h1>
+        </div>
+      </RootDiv>
     </>
   );
 };
