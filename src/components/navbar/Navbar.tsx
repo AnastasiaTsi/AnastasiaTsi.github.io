@@ -46,14 +46,14 @@ const Navbar = ({ AppBarColor }: NavBarProps) => {
             .about()
           </StyledLink> */}
 
-          <StyledLink
+          {/* <StyledLink
             to="/tools"
             className="nav-links"
             style={{ fontSize: "1.2rem" }}
             onClick={closeMobileMenu}
           >
             .tools()
-          </StyledLink>
+          </StyledLink> */}
 
           <StyledLink
             to="/pets"

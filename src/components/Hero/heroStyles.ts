@@ -2,16 +2,6 @@ import styled from "styled-components";
 import colors from "../../style/colors";
 import size from "../../style/size";
 
-export const RootDiv = styled.div`
-  min-height: 100vh;
-  background-image: url(images/bl-plant.jpg);
-  background-size: cover;
-  overflow: hidden;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-`;
-
 export const StyledIs = styled.div`
   font-family: courier;
   font-weight: 600;
