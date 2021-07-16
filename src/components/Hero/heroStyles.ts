@@ -1,15 +1,6 @@
 import styled from "styled-components";
 import colors from "../../style/colors";
-
-export const RootDiv = styled.div`
-  min-height: 100vh;
-  background-image: url(images/bl-plant.jpg);
-  background-size: cover;
-  overflow: hidden;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-`;
+import size from "../../style/size";
 
 export const StyledIs = styled.div`
   font-family: courier;
@@ -26,4 +17,7 @@ export const CardDiv = styled.div`
   height: fit-content;
   color: grey;
   border-left: solid ${colors.purple};
+  @media (max-width: ${size.mobileL}) {
+    margin-left: 35px;
+  }
 `;

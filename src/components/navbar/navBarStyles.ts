@@ -10,13 +10,12 @@ export const StyledAppBar = styled(AppBar)`
 
 export const StyledLink = styled(Link)`
   color: ${colors.white};
-  display: inline-flex;
+  font-family: courier;
   justify-content: flex-end;
   align-items: center;
   text-decoration: none;
-  padding-right: 10px;
+  padding-right: 5px;
   margin: 0.5rem 1rem;
-  height: 100%;
   cursor: pointer;
   &:hover {
     color: ${colors.purple};
@@ -26,7 +25,7 @@ export const StyledLink = styled(Link)`
 
 export const ToolBar = styled.div`
   background-color: transparent;
-  height: 80px;
+  height: 180px;
   align-items: center;
   display: flex;
   justify-content: space-between;

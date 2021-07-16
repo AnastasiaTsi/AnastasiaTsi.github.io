@@ -1,4 +1,4 @@
-import { RootDiv, Heading1 } from "./skillsStyles";
+import { RootDiv, Heading } from "./skillsStyles";
 import { Button } from "@material-ui/core";
 import Card from "./Card";
 import skills from "./skillsList";
@@ -6,7 +6,7 @@ import skills from "./skillsList";
 const Skills = () => {
   return (
     <RootDiv>
-      <Heading1 variant="h2">Skills</Heading1>
+      <Heading variant="h2">Skills</Heading>
       <div
         style={{
           display: "flex",
