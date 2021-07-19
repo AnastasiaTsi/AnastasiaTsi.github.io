@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Tools from "./pages/Tools";
 import Pets from "./pages/Pets";
+import colors from "./style/colors";
 
 const App = () => {
   return (
@@ -17,17 +18,17 @@ const App = () => {
           </Route>
 
           <Route path="/about" exact component={About}>
-            <Navbar AppBarColor="#202123" />
+            <Navbar AppBarColor={colors.black} />
             <About />
           </Route>
 
           <Route path="/tools" exact component={Tools}>
-            <Navbar AppBarColor="#202123" />
+            <Navbar AppBarColor={colors.black} />
             <Tools />
           </Route>
 
           <Route path="/pets" exact component={Pets}>
-            <Navbar AppBarColor="#202123" />
+            <Navbar AppBarColor="transparent" />
             <Pets />
           </Route>
         </Switch>

@@ -51,7 +51,7 @@ const MainCard = () => {
           new technologies in a continues <br /> attempt to make some cool web
           apps...
         </Typography>
-      </MuiThemeProvider>{" "}
+      </MuiThemeProvider>
     </CardDiv>
   );
 };
