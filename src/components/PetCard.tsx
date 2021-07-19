@@ -1,4 +1,3 @@
-import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -9,33 +8,36 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    borderRadius: "15px",
+    marginBottom: "40px",
   },
   media: {
     height: 340,
   },
 });
 
-const PetCard = () => {
+type CardProps = {
+  path: string;
+  name: string;
+  description: string;
+};
+
+const PetCard = ({ path, name, description }: CardProps) => {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="images/bl-rain.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent style={{ backgroundColor: "pink" }}>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      {/* <CardActionArea> */}
+      <CardMedia className={classes.media} image={path} />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="h2">
+          {name}
+        </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {description}
+        </Typography>
+      </CardContent>
+      {/* </CardActionArea> */}
     </Card>
   );
 };
