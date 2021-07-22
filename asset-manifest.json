@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AnastasiaTsi.github.io/static/css/main.e76620dd.chunk.css",
+    "main.js": "/AnastasiaTsi.github.io/static/js/main.6e081fb8.chunk.js",
+    "main.js.map": "/AnastasiaTsi.github.io/static/js/main.6e081fb8.chunk.js.map",
+    "runtime-main.js": "/AnastasiaTsi.github.io/static/js/runtime-main.1dec8930.js",
+    "runtime-main.js.map": "/AnastasiaTsi.github.io/static/js/runtime-main.1dec8930.js.map",
+    "static/js/2.d87302f7.chunk.js": "/AnastasiaTsi.github.io/static/js/2.d87302f7.chunk.js",
+    "static/js/2.d87302f7.chunk.js.map": "/AnastasiaTsi.github.io/static/js/2.d87302f7.chunk.js.map",
+    "static/js/3.792e5d05.chunk.js": "/AnastasiaTsi.github.io/static/js/3.792e5d05.chunk.js",
+    "static/js/3.792e5d05.chunk.js.map": "/AnastasiaTsi.github.io/static/js/3.792e5d05.chunk.js.map",
+    "index.html": "/AnastasiaTsi.github.io/index.html",
+    "static/css/main.e76620dd.chunk.css.map": "/AnastasiaTsi.github.io/static/css/main.e76620dd.chunk.css.map",
+    "static/js/2.d87302f7.chunk.js.LICENSE.txt": "/AnastasiaTsi.github.io/static/js/2.d87302f7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1dec8930.js",
+    "static/js/2.d87302f7.chunk.js",
+    "static/css/main.e76620dd.chunk.css",
+    "static/js/main.6e081fb8.chunk.js"
+  ]
+}
