@@ -1,5 +1,4 @@
 import { RootDiv, Heading } from "./skillsStyles";
-import { Button } from "@material-ui/core";
 import Card from "./Card";
 import skills from "./skillsList";
 

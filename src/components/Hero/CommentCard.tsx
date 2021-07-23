@@ -8,6 +8,7 @@ const CommentCard = () => {
         style={{ fontFamily: "courier", fontWeight: "bold" }}
         variant="h5"
         gutterBottom
+        // eslint-disable-next-line react/jsx-no-comment-textnodes
       >
         /* <br />
         - Web Development <br />- at its most

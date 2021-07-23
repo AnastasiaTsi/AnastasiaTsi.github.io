@@ -1,4 +1,4 @@
-import { Typography, Divider } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import { CardDiv } from "./skillsStyles";
 
 type CardProps = {
