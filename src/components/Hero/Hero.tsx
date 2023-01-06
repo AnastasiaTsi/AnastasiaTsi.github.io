@@ -13,12 +13,7 @@ const Hero = () => {
       <MainCard />
 
       {info.map((info, index) => (
-        <MyCard
-          key={index}
-          title={info.title}
-          paragraph1={info.paragraph1}
-          paragraph2={info.paragraph2}
-        />
+        <MyCard key={index} title={info.title} paragraphs={info.paragraphs} />
       ))}
 
       <CommentCard />

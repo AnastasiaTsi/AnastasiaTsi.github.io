@@ -3,16 +3,15 @@ import { CardDiv } from "./heroStyles";
 
 const CommentCard = () => {
   return (
-    <CardDiv style={{ marginTop: "30px" }}>
+    <CardDiv style={{ marginTop: "200px" }}>
       <Typography
         style={{ fontFamily: "courier", fontWeight: "bold" }}
         variant="h5"
         gutterBottom
-        // eslint-disable-next-line react/jsx-no-comment-textnodes
       >
         /* <br />
-        - Web Development <br />- at its most
-        <br />- <span style={{ color: "#555" }}>mediocre</span> form <br />
+        * Web Development <br />* at its most
+        <br />* <span style={{ color: "#555" }}>mediocre</span> form <br />
         */
       </Typography>
     </CardDiv>

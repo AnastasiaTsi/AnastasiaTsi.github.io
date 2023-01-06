@@ -1,7 +1,7 @@
 const skills = [
   {
     title: "Technical",
-    array: ["Typescript", "React", "Node", "Git"],
+    array: ["Vue", "React", "Node", "Typescript"],
   },
   {
     title: "Soft",

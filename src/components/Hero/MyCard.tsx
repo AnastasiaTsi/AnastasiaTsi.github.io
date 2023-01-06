@@ -4,11 +4,10 @@ import colors from "../../style/colors";
 
 type CardProps = {
   title: string;
-  paragraph1?: string;
-  paragraph2?: string;
+  paragraphs?: string[];
 };
 
-const MyCard = ({ title, paragraph1, paragraph2 }: CardProps) => {
+const MyCard = ({ title, paragraphs }: CardProps) => {
   return (
     <CardDiv>
       <Typography variant="h2" component="h1" gutterBottom>
@@ -25,12 +24,20 @@ const MyCard = ({ title, paragraph1, paragraph2 }: CardProps) => {
           )
         </StyledIs>
       </Typography>
-      <Typography style={{ color: "#555" }} variant="h6" gutterBottom>
-        {paragraph1}
-      </Typography>
-      <Typography variant="body1" gutterBottom>
-        {paragraph2}
-      </Typography>
+
+      {paragraphs?.map((paragraph, index) => (
+        <>
+          {index % 2 === 0 ? (
+            <Typography variant="h6" gutterBottom>
+              {paragraph}
+            </Typography>
+          ) : (
+            <Typography style={{ color: "#555" }} variant="body1" gutterBottom>
+              {paragraph}
+            </Typography>
+          )}
+        </>
+      ))}
     </CardDiv>
   );
 };
