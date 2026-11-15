@@ -50,7 +50,7 @@ const Pets = () => {
         <Signature>Anastasia.is(pets)</Signature>
         <Title>Because why not?</Title>
         <Lead>
-          A short break from product UI — meet the two who keep the house
+          A short break from product UI - meet the two who keep the house
           interesting.
         </Lead>
       </Header>
@@ -59,11 +59,13 @@ const Pets = () => {
           path="images/pets/fivos.JPG"
           name="Fivos"
           description={fivos}
+          preset="stars"
         />
         <PetCard
           path="images/pets/charlotte.jpg"
           name="Charlotte"
           description={charlotte}
+          preset="stars"
         />
       </PetsDiv>
     </Page>

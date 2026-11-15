@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero/Hero";
 import Experience from "../components/Experience/Experience";
 import Skills from "../components/skills/Skills";
+import Playground from "../components/Playground/Playground";
 import styled from "styled-components";
 import colors from "../style/colors";
 
@@ -55,6 +56,7 @@ const Home = () => {
       <Hero />
       <Experience />
       <Skills />
+      <Playground />
       <Footer>
         <span>
           Anastasia Tsilepi <Mono>.is()</Mono>

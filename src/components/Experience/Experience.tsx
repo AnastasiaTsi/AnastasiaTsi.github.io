@@ -120,10 +120,10 @@ const EduMeta = styled.p`
 
 const roles = [
   {
-    dates: "May 2022 — Present",
+    dates: "May 2022 - Present",
     title: "Front End Developer · Hack The Box",
     detail:
-      "Design System Lead for the Vue 3 UI library — Storybook docs, npm publishing, and clear guidelines used by 31 internal and external projects.",
+      "Design System Lead for the Vue 3 UI library - Storybook docs, npm publishing, and clear guidelines used by 31 internal and external projects.",
     highlights: [
       "Roadmap and sprint ownership in Jira across new components and maintenance",
       "Partner with designers and engineers across product teams",
@@ -132,19 +132,19 @@ const roles = [
     ],
   },
   {
-    dates: "Sep 2021 — May 2022",
+    dates: "Sep 2021 - May 2022",
     title: "Front End Developer · Cognity",
     detail:
-      "React work on Boost, a corporate sales automation app for leads, opportunities, and offers — plus front-end support for the Vodafone homepage.",
+      "React work on Boost, a corporate sales automation app for leads, opportunities, and offers - plus front-end support for the Vodafone homepage.",
   },
   {
-    dates: "Sep 2020 — Aug 2021",
+    dates: "Sep 2020 - Aug 2021",
     title: "Full Stack Developer · Dataverse",
     detail:
       "Built and supported a MERN stack website for Arcon, covering user management, AR project handling, and media library administration.",
   },
   {
-    dates: "Jan 2019 — Aug 2019",
+    dates: "Jan 2019 - Aug 2019",
     title: "Internship · Greek Parliament Informatics Center",
     detail:
       "Developed and supported mobile and web applications for internal use at the Parliament’s Informatics Center.",

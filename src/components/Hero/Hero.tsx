@@ -57,7 +57,7 @@ const Hero = () => {
         </Role>
         <Lead data-hero-item>
           5+ years building scalable web apps and enterprise platforms. I lead
-          Hack The Box’s Vue 3 design system — a component library used across
+          Hack The Box’s Vue 3 design system - a component library used across
           31 projects.
         </Lead>
         <CtaRow data-hero-item>

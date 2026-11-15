@@ -1,38 +1,15 @@
 import styled from "styled-components";
 import colors from "../style/colors";
+import HoloCard, { HoloCardProps } from "./HoloCard/HoloCard";
 
 const Figure = styled.figure`
   margin: 0;
   display: grid;
   gap: 1rem;
-`;
 
-const ImageWrap = styled.div`
-  overflow: hidden;
-  border-radius: 1.25rem;
-  aspect-ratio: 4 / 5;
-  background: ${colors.soft};
-  border: 1px solid rgba(18, 21, 26, 0.08);
-
-  img {
+  .holo-card {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-  }
-
-  &:hover img {
-    transform: scale(1.03);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    img {
-      transition: none;
-    }
-
-    &:hover img {
-      transform: none;
-    }
+    aspect-ratio: 4 / 5;
   }
 `;
 
@@ -58,14 +35,26 @@ type CardProps = {
   path: string;
   name: string;
   description: string;
+  preset?: HoloCardProps["preset"];
 };
 
-const PetCard = ({ path, name, description }: CardProps) => {
+const PetCard = ({ path, name, description, preset = "stars" }: CardProps) => {
   return (
     <Figure>
-      <ImageWrap>
-        <img src={path} alt={name} />
-      </ImageWrap>
+      <HoloCard
+        image={path}
+        alt={name}
+        preset={preset}
+        width={420}
+        radius={20}
+        intensity={0.45}
+        edgeSparkle={0.55}
+        glare={0.35}
+        foilColor="#e8eef2"
+        idle={false}
+        hoverScale={1}
+        shadow
+      />
       <Caption>
         <Name>{name}</Name>
         <Description>{description}</Description>
