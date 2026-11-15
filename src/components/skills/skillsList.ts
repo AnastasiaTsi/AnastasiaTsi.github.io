@@ -1,11 +1,17 @@
 const skills = [
   {
-    title: "Technical",
-    array: ["Vue", "React", "Node", "Typescript"],
+    title: "Languages & frameworks",
+    array: ["JavaScript", "SCSS", "Vue 3", "React", "Node.js"],
   },
   {
-    title: "Soft",
-    array: ["Adaptability", "Teamwork", "Problem solving", "Accountability"],
+    title: "Design systems",
+    array: [
+      "Storybook",
+      "npm publishing",
+      "Component libraries",
+      "UI guidelines",
+      "LLM-friendly docs",
+    ],
   },
 ];
 
